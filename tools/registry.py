@@ -15,7 +15,7 @@ class ToolRegister:
             "run_command": run_command,
             "git_status": git_status,
             "git_diff": git_diff,
-            "edit_file":edit_file
+            "edit_file": edit_file,
         }
 
     def execute(self, name, args):
@@ -23,11 +23,8 @@ class ToolRegister:
             return {"success": False, "error": f"Unknown tool: {name}"}
 
         tool = self.tools[name]
-
         try:
             result = tool(**args)
-
             return {"success": True, "result": result}
-
         except Exception as e:
             return {"success": False, "error": str(e)}
