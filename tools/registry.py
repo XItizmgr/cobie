@@ -2,6 +2,7 @@ from tools.filesystem import read_file, write_file, list_directory
 from tools.search import search_file
 from tools.terminal import run_command
 from tools.git import git_diff, git_status
+from tools.edit import edit_file
 
 
 class ToolRegister:
@@ -14,6 +15,7 @@ class ToolRegister:
             "run_command": run_command,
             "git_status": git_status,
             "git_diff": git_diff,
+            "edit_file":edit_file
         }
 
     def execute(self, name, args):
@@ -29,10 +31,3 @@ class ToolRegister:
 
         except Exception as e:
             return {"success": False, "error": str(e)}
-
-
-if __name__ == "__main__":
-    registry = ToolRegister()
-    print(registry.tools)
-    print(registry.execute("read_file", {"path": "README.md"}))
-    print(registry.execute("list_directory", {"path": "."}))
