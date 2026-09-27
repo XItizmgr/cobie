@@ -4,6 +4,25 @@ from rich.text import Text
 
 console = Console()
 
+
+
+def get_api_key():
+    console.print(
+         "[bold cyan]Plz paste your gemini api key..[/bold cyan]"
+    )
+    console.print(
+        "[dim]Your key will only be used for this session.[/dim]\n"
+    )
+    
+    while True:
+        api_key = input("Gemini API key: ")
+
+        if api_key.strip():
+            return api_key.strip()
+
+        print("API key cannot be empty.")
+
+
 def welcome():
     title = Text("COBIE",style="bold cyan")
     subtitle = Text("Your local AI coding agent",style="dim")
@@ -24,6 +43,8 @@ def welcome():
     console.print(
         "[dim]Type[/dim] [bold cyan]/help[/bold cyan]"
         "[dim] To see available commands.[/dim] \n"
+        "[dim]Type[/dim] [bold cyan]/exit[/bold cyan]"
+        "[dim] To exit COBIE[/dim] \n"
     )
 def user_prompt():
     return console.input("[bold cyan]> [/bold cyan]")

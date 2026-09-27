@@ -1,10 +1,11 @@
 from agent.agent import Agent
-from cli.commands import clear_history,show_help
-from cli.ui import(show_goodbye,show_message,show_response,user_prompt,welcome)
+from cli.commands import clear_history, show_help
+from cli.ui import show_goodbye, show_message, show_response, user_prompt, welcome,get_api_key
 
 
 def run_cli():
-    agent = Agent()
+    api_key = get_api_key()
+    agent = Agent(api_key)
     welcome()
     while True:
         user_input = user_prompt()
@@ -26,8 +27,6 @@ def run_cli():
             show_message("COBIE is thinkingg....")
             response = agent.run(user_input)
             show_response(response)
-            
+
         except Exception as e:
             show_message(f"Error:{e}")
-
-

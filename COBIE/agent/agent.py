@@ -1,16 +1,12 @@
-import os
 
-from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from tools.registry import ToolRegister
 
-load_dotenv()
-
 
 class Agent:
-    def __init__(self):
-        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    def __init__(self,api_key):
+        self.client = genai.Client(api_key=api_key)
         self.registry = ToolRegister()
         self.contents = []
         self.model = "gemini-3-flash-preview"
