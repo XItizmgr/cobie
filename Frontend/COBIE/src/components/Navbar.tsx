@@ -14,15 +14,15 @@ export function Navbar() {
           <a href="#home" className={style}>
             Home
           </a>
-          <a href="#home" className={style}>
+          <a href="#about" className={style}>
             About
           </a>
-          <a href="#home" className={style}>
+          <a href="#feature" className={style}>
             Feature
           </a>
         </div>
         <div className="flex items-center">
-          <a href="#" className="px-5 py-2 font-semibold rounded-xl shadow-xl transition-all active:scale-[0.98] bg-(--btn-bg-color) text-(--dark-brown) border-1 border-(--border-color)">
+          <a href="#download" className="px-5 py-2 font-semibold rounded-xl shadow-xl transition-all active:scale-[0.98] bg-(--btn-bg-color) text-(--dark-brown) border-1 border-(--border-color)">
             Get Started
           </a>
         </div>

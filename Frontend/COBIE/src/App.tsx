@@ -1,13 +1,27 @@
-import { Navbar } from "./components/Navbar"
-import { Hero } from "./components/Hero"
+import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { Feature } from "./components/Feature";
+import { About } from "./components/About";
+import { Terminal } from "./components/Terminal";
+import { Download } from "./components/Download";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <main className="">
-      <Navbar/>
-      <Hero/>
-    </main>
-  )
+    <>
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About />
+        <Feature />
+        <Terminal />
+        <Download />
+      </main>
+
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

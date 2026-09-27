@@ -4,7 +4,7 @@ export function About() {
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-sm uppercase tracking-tight text-(--accent-blue)">About COBIE</p>
+            <p className="text-2xl uppercase tracking-tight text-(--accent-blue) font-semibold">About COBIE</p>
             <h2 className="mt-4 text-4xl font-semibold text-(--main-heading-textBg)">A codingg agent that lives where your code does.</h2>
           </div>
           <div className="text-lg leading-relaxed text-(--text-color)">

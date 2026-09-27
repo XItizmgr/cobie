@@ -30,7 +30,7 @@ export function Hero() {
             </a>
 
             <a
-              href="#features"
+              href="#feature"
               className="px-6 py-3 rounded-xl font-semibold
               border border-(--border-color)
               text-(--logo-color)
