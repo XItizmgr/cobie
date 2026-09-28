@@ -1,10 +1,12 @@
 from agent.agent import Agent
 from cli.commands import clear_history,show_help
 from cli.ui import(show_goodbye,show_message,show_response,user_prompt,welcome)
+from cli.ui import api_key
 
 
 def run_cli():
-    agent = Agent()
+    api_key = api_key()
+    agent = Agent(api_key)
     welcome()
     while True:
         user_input = user_prompt()

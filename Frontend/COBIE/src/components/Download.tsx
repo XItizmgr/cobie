@@ -19,7 +19,7 @@ export function Download() {
               Download COBIE
             </a>
             <a
-              href="https://github.com/XItizmgr/cobie/tree/frontend"  target="_blank"
+              href="https://github.com/XItizmgr/cobie"  target="_blank"
               className="inline-block px-7 py-3 rounded-xl font-semibold bg-(--accent-blue)
               text-(--dark-brown)
               shadow-lg
