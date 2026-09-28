@@ -8,7 +8,7 @@ export function Download() {
           <p className="max-w-xl mx-auto mt-6 text-lg text-(--bg-color)">Download COBIE, set up your environment,and start working with your projects locally.</p>
           <div className="mt-9 max-w-2xl mx-auto flex gap-10 justify-center items-center">
             <a
-              href="Frontend/COBIE/public/cobie-frontend.zip" download
+              href="Frontend/COBIE/public/cobie-main.zip" download
               className="inline-block px-7 py-3 rounded-xl font-semibold bg-(--bg-color)
               text-(--dark-brown)
               shadow-lg
