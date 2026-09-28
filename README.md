@@ -3,6 +3,8 @@
 > COBIE is your local ai
 > COBIE is a local AI coding agent that works directly with your project through the terminal.
 
+![alt text](image-1.png) 
+
 Cobie is powered by gemini api . which u can get it for free in _ https://aistudio.google.com/api-keys _
 
 ## Feature
@@ -19,6 +21,18 @@ Cobie is powered by gemini api . which u can get it for free in _ https://aistud
 - google gemini api key
 - python subprocess module
 
+# The website look 
+The purpose of making website is to showcase our COBIE..
+
+![alt text](image.png)
+
+Feature
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
 # For website Tech Stack
 
 - React

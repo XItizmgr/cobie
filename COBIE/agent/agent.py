@@ -8,6 +8,7 @@ class Agent:
         self.client = genai.Client(api_key=api_key)
         self.registry = ToolRegister()
         self.contents = []
+        # you can change the gemini model as u want 
         self.model = "gemini-3-flash-preview"
         self.instructions = """
 You are COBIE, a local AI coding agent.
