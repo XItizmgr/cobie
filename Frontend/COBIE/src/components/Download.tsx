@@ -1,7 +1,9 @@
+import { sectionAnimation } from "./variant";
+import {motion} from "motion/react"
 export function Download() {
   return (
     <section className="px-6 py-28" id="download">
-      <div className="max-w-5xl mx-auto">
+      <motion.div variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{amount:0.2}} className="max-w-5xl mx-auto">
         <div className="rounded-3xl p-10 md:p-16 text-center bg-(--secondary-bg-color)">
           <p className="text-sm uppercase tracking-tight text-(--bg-color)">Get started</p>
           <h2 className="mt-4 text-4xl md:text-5xl font-semibold text-white">Bring COBIE to your terminal</h2>
@@ -31,7 +33,7 @@ export function Download() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

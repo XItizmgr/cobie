@@ -1,7 +1,9 @@
+import { sectionAnimation } from "./variant";
+import {motion} from "motion/react"
 export function Terminal() {
   return (
     <section className="px-6 py-28">
-      <div className="max-w-5xl mx-auto">
+      <motion.div variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{amount:0.2}} className="max-w-5xl mx-auto">
         <div className="rounded-2xl overflow-hidden border border(--border-color) shadow-xl bg-(--dark-brown)">
           <div className="px-5 py-3 border-b border-(--light-brown)">
             <span className="text-2xl font-semibold text-(--btn-bg-color)">Cobie</span>
@@ -16,7 +18,7 @@ export function Terminal() {
             <p className="text-green-400 mt-3">Project inspected successfully</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

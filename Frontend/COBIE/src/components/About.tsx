@@ -1,7 +1,10 @@
+import { sectionAnimation } from "./variant";
+import {motion} from "motion/react"
+
 export function About() {
   return (
     <section className="px-6 py-28" id="about">
-      <div className="max-w-5xl mx-auto">
+      <motion.div variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-2xl uppercase tracking-tight text-(--accent-blue) font-semibold">About COBIE</p>
@@ -12,7 +15,7 @@ export function About() {
             <p className="mt-6">It can inspect files,search your project, run terminal commands,and interact with GIt while your stay in control</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

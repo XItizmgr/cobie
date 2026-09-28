@@ -1,9 +1,10 @@
+import { motion } from "motion/react";
 const style =
   "relative inline-block py-1 transition-colors text-md before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:h-[2px] before:w-full before:bg-black before:-translate-x-1/2 before:scale-x-0 before:transition-transform before:duration-300 before:ease-out hover:before:scale-x-100 ";
 
 export function Navbar() {
   return (
-    <div className="flex justify-center items-center w-full p-7 sticky top-0 z-50 backdrop-blur-md">
+    <motion.div initial={{opacity:0 ,y:-15}} animate={{opacity:1,y:0}} transition={{duration:0.5,ease:"easeOut"}} className="flex justify-center items-center w-full p-7 sticky top-0 z-50 backdrop-blur-md">
       <nav className="flex justify-between w-full max-w-5xl  mx-auto border border-(--border-color ) px-6 py-3 rounded-2xl shadow-md transition-all bg-(--bg-color)">
         <div id="logo" className="flex items-center gap-2">
           <a href="/" className="text-xl font-bold tracking-tight transition-colors text-(--logo-color)">
@@ -27,6 +28,6 @@ export function Navbar() {
           </a>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 }

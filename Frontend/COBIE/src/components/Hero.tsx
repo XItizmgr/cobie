@@ -1,21 +1,41 @@
+import { motion } from "motion/react";
+
+
 export function Hero() {
   return (
     <section id="home" className="min-h-[calc(100vh-120px)] flex items-center px-6">
       <div className="max-w-5xl w-full mx-auto">
         <div className="max-w-3xl">
-          <p className="mb-6 text-sm font-medium tracking-[0.2em] uppercase text-(--accent-blue)">Local AI Coding Agent</p>
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mb-6 text-sm font-medium tracking-[0.2em] uppercase text-(--accent-blue)"
+          >
+            Local AI Coding Agent
+          </motion.p>
 
-          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] text-(--main-heading-textBg)">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] text-(--main-heading-textBg)"
+          >
             Your code.
             <br />
             <span className="text-(--accent-blue)">Your machine.</span>
-          </h1>
+          </motion.h1>
 
-          <p className="mt-8 max-w-2xl text-lg md:text-xl leading-relaxed text-(--text-color)">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.55, duration: 0.7 }}
+            className="mt-8 max-w-2xl text-lg md:text-xl leading-relaxed text-(--text-color)"
+          >
             COBIE is a local AI coding agent that helps you understand, inspect, and work with your projects directly from your terminal.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-wrap gap-4 mt-10">
+          <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.6 }} className="flex flex-wrap gap-4 mt-10">
             <a
               href="#download"
               className="px-6 py-3 rounded-xl font-semibold
@@ -39,7 +59,7 @@ export function Hero() {
             >
               Explore COBIE
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
