@@ -1,4 +1,4 @@
-import {motion,type Variants} from "motion/react"
+import {type Variants} from "motion/react"
 
 export const sectionAnimation:Variants ={
     hidden:{
