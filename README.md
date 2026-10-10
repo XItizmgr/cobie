@@ -102,9 +102,9 @@ u can get it from here
 
 # How to run COBIE.
 
-- Download COBIE (Folder for now) from the website.
-- open CObie folder
-
+- Download COBIE (Folder for now ) from the website .
+- open the folder
+- and navigate to cobie main folder u have two folder inside the root folder frontend and cobie navigate to cobie 
 ```bash
     cd cobie
 ```
