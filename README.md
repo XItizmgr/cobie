@@ -3,7 +3,7 @@
 > COBIE is your local ai
 > COBIE is a local AI coding agent that works directly with your project through the terminal.
 
-![alt text](image-1.png) 
+![alt text](image-1.png)
 
 Cobie is powered by gemini api . which u can get it for free in _ https://aistudio.google.com/api-keys _
 
@@ -21,7 +21,8 @@ Cobie is powered by gemini api . which u can get it for free in _ https://aistud
 - google gemini api key
 - python subprocess module
 
-# The website look 
+# The website look
+
 The purpose of making website is to showcase our COBIE..
 
 ![alt text](image.png)
@@ -33,6 +34,7 @@ Feature
 ![alt text](image-3.png)
 
 ![alt text](image-4.png)
+
 # For website Tech Stack
 
 - React
@@ -75,25 +77,62 @@ it handle user input , commands and etc
 
 ### 2. Create a virtual enrironment
 
-````bash
+```bash
     python -m venv venv
     venv\Scripts\activate
-````
+```
 
 ### 3. Install dependencies
 
-````bash
+```bash
     pip install -r requirements.txt
-````
+```
+
 ### 4. Get a gemini API key
-COBIE use google gemini api as its llm model 
-u can get it from here 
+
+COBIE use google gemini api as its llm model
+u can get it from here
 *https://aistudio.google.com/apikey*
 
 ### 5. Run COBIE
-````bash
-    python __main__.py
-````
 
-# Reminder 
+```bash
+    python __main__.py
+```
+
+# How to run COBIE.
+
+- Download COBIE (Folder for now) from the website.
+- open CObie folder
+
+```bash
+    cd cobie
+```
+
+- Create a virtual enrironment
+
+```bash
+    python -m venv venv
+    venv\Scripts\activate
+```
+
+- Install dependencies
+
+```bash
+    pip install -r requirements.txt
+```
+
+- Get a gemini API key
+  COBIE use google gemini api as its llm model
+  u can get it from here
+  *https://aistudio.google.com/apikey*
+
+- Run COBIE
+
+```bash
+    python __main__.py
+```
+
+# Reminder
+
 The project is not fully complete as i want to make COBIE a vs code extension which can help many devloper and it will have many future plan..
