@@ -5,7 +5,7 @@ import { About } from "./components/About";
 import { Terminal } from "./components/Terminal";
 import { Download } from "./components/Download";
 import { Footer } from "./components/Footer";
-
+import './index.css'
 function App() {
   return (
     <>
