@@ -1,0 +1,2 @@
+[console_scripts]
+cobie = cobie.cli.main:run_cli

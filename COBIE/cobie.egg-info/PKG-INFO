@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: cobie
+Version: 1.0
+Summary: Your local AI coding agent
+Author: Xitiz mgr
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: google-genai
+Requires-Dist: rich
+Requires-Dist: python-dotenv
+
+# What is COBIE
+
+> COBIE is your local ai
+> COBIE is a local AI coding agent that works directly with your project through the terminal.
+
+![alt text](image-1.png)
+
+Cobie is powered by gemini api . which u can get it for free in _ https://aistudio.google.com/api-keys _
+
+## Feature
+
+- directly run on terminal no need to copy paste and ask llm for fixing u can directly fix it
+- Read file
+- Write file
+- edit file , etc
+
+# Tech Stack
+
+- python
+- Rich for terminal ui
+- google gemini api key
+- python subprocess module

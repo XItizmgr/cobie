@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobie"
+version = "1.0"
+description = "Your local AI coding agent"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Xitiz mgr" }
+]
+dependencies = [
+    "google-genai",
+    "rich",
+    "python-dotenv"
+]
+
+[project.scripts]
+cobie = "cobie.cli.main:run_cli"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cobie*"]
+exclude = ["venv*"]

@@ -61,6 +61,21 @@ The worker who work as per the command of agent
 THe terminal interface .
 it handle user input , commands and etc
 
+# How to run Cobie.
+There are two ways to run COBIE
+- Download COBIE package from pip install using:
+```bash
+pip install cobie
+```
+- then to activate COBIE just type cobie in terminal :
+```bash
+cobie
+```
+- After that just add google geminai free version code and run (the gemini model should be gemini-3-flash-preview)
+
+- Second run locally by installing cobie source code 
+
+
 # Installation
 
 ## Requirements
@@ -91,7 +106,7 @@ it handle user input , commands and etc
 ### 4. Get a gemini API key
 
 COBIE use google gemini api as its llm model
-u can get it from here
+u can get it from here(make sure to get the free gemini-3-flash-preview version api key)
 *https://aistudio.google.com/apikey*
 
 ### 5. Run COBIE
@@ -136,3 +151,5 @@ u can get it from here
 # Reminder
 
 The project is not fully complete as i want to make COBIE a vs code extension which can help many devloper and it will have many future plan..
+and TwT your credit/token will be used so fast so worry about that TwT
+
