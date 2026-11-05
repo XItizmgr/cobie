@@ -14,7 +14,7 @@ def ask_api_key():
         if api_key.strip():
             return api_key.strip()
 
-        console.print("[red]API key cannot be empty.[/red]")
+        show_error("Api key cannot be empty :( ")
 
 
 def welcome():
@@ -57,4 +57,14 @@ def show_goodbye():
 
 
 def show_message(message):
-    console.print(f"[dim]{message}[/dim]")
+    console.print(f"[dim violet]{message}[/dim violet]")
+
+def show_success(message):
+    console.print(f"[bold green] Sucess :) {message} [/bold green] ")
+    
+def show_warning(mess):
+    console.print(f"[bold yellow] Warning  :(  {mess} [/bold yellow]  ")
+
+def show_error(mess):
+    console.print(f"[bold red] Error :(  {mess} [/bold red]" )
+    

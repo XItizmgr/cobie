@@ -1,14 +1,15 @@
-
 from google import genai
 from google.genai import types
 from cobie.tools.registry import ToolRegister
+from cobie.cli.ui import console
+
 
 class Agent:
-    def __init__(self,api_key):
+    def __init__(self, api_key):
         self.client = genai.Client(api_key=api_key)
         self.registry = ToolRegister()
         self.contents = []
-        # you can change the gemini model as u want 
+        # you can change the gemini model as u want
         self.model = "gemini-3-flash-preview"
         self.instructions = """
 You are COBIE, a local AI coding agent.
@@ -161,14 +162,11 @@ IMPORTANT RULES:
             tools=[types.Tool(function_declarations=self.tools)],
         )
 
-
     def run(self, user_message):
         self.contents.append(
             types.Content(
                 role="user",
-                parts=[
-                    types.Part.from_text(text=user_message)
-                ],
+                parts=[types.Part.from_text(text=user_message)],
             )
         )
 
@@ -193,19 +191,14 @@ IMPORTANT RULES:
                 tool_name = function_call.name
                 arguments = dict(function_call.args)
 
-                print(f"[Tool] {tool_name}({arguments})")
+                console.print(f"[bold purple][TOOL][/bold purple] [cyan]{tool_name}[/cyan]")
 
-                result = self.registry.execute(
-                    tool_name,
-                    arguments
-                )
+                result = self.registry.execute(tool_name, arguments)
 
                 function_responses.append(
                     types.Part.from_function_response(
                         name=tool_name,
-                        response={
-                            "result": result
-                        },
+                        response={"result": result},
                     )
                 )
 

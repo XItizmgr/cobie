@@ -1,11 +1,11 @@
 from pathlib import Path
-
+from cobie.cli.ui import show_warning
 
 def read_file(path):
     file_path = Path(path)
 
     if not file_path.exists():
-        return "File does not exists"
+        return show_warning("File does not exists")
     return file_path.read_text()
 
 
@@ -19,9 +19,9 @@ def list_directory(path):
     directory = Path(path)
     lists = []
     if not directory.exists():
-        return "The directory doesn't exists"
+        return show_warning("The directory doesn't exists")
     if not directory.is_dir():
-        return "Given path is not directory"
+        return show_warning("Given path is not directory")
     for list in directory.iterdir():
         lists.append(list.name)
 

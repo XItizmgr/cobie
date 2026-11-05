@@ -1,5 +1,4 @@
-from cobie.cli.ui import console
-
+from cobie.cli.ui import console, show_success
 
 def show_help():
     console.print(
@@ -14,4 +13,4 @@ def show_help():
 
 def clear_history(agent):
     agent.contents.clear()
-    console.print("[green]✓ Conversation history cleared.[/green]")
+    show_success("Conversation history cleared.")

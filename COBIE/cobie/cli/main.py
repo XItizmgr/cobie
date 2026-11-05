@@ -1,7 +1,6 @@
 from cobie.agent.agent import Agent
-from cobie.cli.commands import clear_history,show_help
-from cobie.cli.ui import(show_goodbye,show_message,show_response,user_prompt,welcome)
-from cobie.cli.ui import ask_api_key
+from cobie.cli.commands import clear_history, show_help
+from cobie.cli.ui import (show_goodbye,show_message,show_response,show_error,user_prompt,welcome,ask_api_key,)
 
 
 def run_cli():
@@ -28,8 +27,6 @@ def run_cli():
             show_message("COBIE is thinkingg....")
             response = agent.run(user_input)
             show_response(response)
-            
+
         except Exception as e:
-            show_message(f"Error:{e}")
-
-
+            show_error(str(e))
