@@ -1,27 +1,65 @@
-# What is COBIE
-
+    # What is COBIE
+ 
 > COBIE is your little helper that live on your computer.
 
 Think of COBIE as a helper that helps u while u work on your project.you can tell it what u want to do and it will help u with it like find,create,and change files.(only work for file/document)
 
 
 ![alt text](image-1.png)
-U know every machine have an engine for them to work. COBIE's engine is google gemini api.U don't 
-Cobie is powered by gemini api . which u can get it for free in _ 
+U know every machine have an engine for them to work just like that COBIE's engine is google gemini api.U don't need to understand every part of engine for to use machine but just in case.
 
-## Feature
+## API 
+> What is an API ? 
+Think of api like a bridge that connect your bakery to your customer. 
+ur customer cannot order cookies without going to bakery but api aka bridge allow u to take ur order and give it to bakery using bridge 
+ 
+ u can also connect ur bakery to ur customer using bridge from this website.*https://aistudio.google.com/api-keys *
 
-- directly run on terminal no need to copy paste and ask llm for fixing u can directly fix it
-- Read file
-- Write file
-- edit file , etc
+## Feature(What are the things cobie can do )
 
-# Tech Stack
+- u don't need to ask any one for the if the things u wrote in a file is correct u can just correct it or ask cobie for it in ur own computer
+- Can read file in ur computer for u and give answer.
+- CAn write something for u or anything just need u to ask 
+- or u can use it to change ur shilly mistake in ur existing file (don't worry mistake can happen  )
 
-- python
+# Tech Stack(What are the things i used to make cobie)
+
+- python ()
 - Rich for terminal ui
 - google gemini api key
 - python subprocess module
+
+
+# How COBIE work
+
+Okii enough of cobie can do that and blah balh but how does cobie actually work.
+Let's understand this through a story.(hehe i know u like story grandma)
+
+Suppose you are siting at your desk and say :
+
+"COBIE make me a document a website or create a file which has i love cookie 1000 time"
+
+What do u think happen next ?
+
+
+
+The basic flow is user ask cobie to edit or create or any kinda task in terminal and cobie send that request to agent(gemini api) and the api will respond with tool and tools will do the work and send response
+
+# Project FOlder.
+
+## agent
+
+the brain of COBIE
+That handle the communication with gemini and manges the tool
+
+## tools
+
+The worker who work as per the command of agent
+
+## Cli
+
+THe terminal interface .
+it handle user input , commands and etc
 
 # The website look
 
@@ -43,25 +81,7 @@ Feature
 - Typescript
 - Tailwind
 
-# How COBIE work
 
-The basic flow is user ask cobie to edit or create or any kinda task in terminal and cobie send that request to agent(gemini api) and the api will respond with tool and tools will do the work and send response
-
-# Project FOlder.
-
-## agent
-
-the brain of COBIE
-That handle the communication with gemini and manges the tool
-
-## tools
-
-The worker who work as per the command of agent
-
-## Cli
-
-THe terminal interface .
-it handle user input , commands and etc
 
 # How to run Cobie.
 There are two ways to run COBIE
