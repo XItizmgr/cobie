@@ -41,27 +41,33 @@ Suppose you are siting at your desk and say :
 
 What do u think happen next ?
 
+COBIE will get ur instruction like a u telling a person or ur grandson what u want them to do.Then COBIE also asked his helper to do ur work(the helper is google gemini api) and then inside COBIE there is a manager who decide what to do with gemini (COBIE helper) and after deciding COBIE workers do simple specific task like create document read and edit after all the effort from these helper COBIE finally give u the result.
 
+In Simple -> you give work -> cobie understands it -> the manager decides what to do -> the workers do the job -> COBIE shows the result
 
-The basic flow is user ask cobie to edit or create or any kinda task in terminal and cobie send that request to agent(gemini api) and the api will respond with tool and tools will do the work and send response
+# Project FOlder(different parts of cobie and it's worker).
 
-# Project FOlder.
+## agent(The brain/manager of COBIE)
 
-## agent
+think of it as the manager of shop .
+The manager handle the communation ,listen what needs to be done and decides which worker should handle the job.
 
-the brain of COBIE
-That handle the communication with gemini and manges the tool
+## tools(The workers)
+These are the parts that actually carry out the work.
+As in a shop there are different worker just like that cobie has different worker for different task.
+- one worker finds documents/file.
+- one worker read documents/file.
+- one worker change documents/file.
 
-## tools
+## Cli(the place where u talk to cobie)
+This is the part you see when u open cobie and start typing
 
-The worker who work as per the command of agent
+think of this as a reception desk of an office. u just tell receptionist what u need and she/he will brings the information to right people and u get ur job or information from them
 
-## Cli
+# The website 
 
-THe terminal interface .
-it handle user input , commands and etc
-
-# The website look
+I also created a website for COBIE.
+A website is just like shop but online where u can buy ,sell or even roam,etc 
 
 The purpose of making website is to showcase our COBIE..
 
@@ -85,11 +91,11 @@ Feature
 
 # How to run Cobie.
 There are two ways to run COBIE
-- Download COBIE package from pip install using:
+- Download COBIE package from pip(store from where u will get cobie but its free) install using:
 ```bash
 pip install cobie
 ```
-- then to activate COBIE just type cobie in terminal :
+- then to activate COBIE just type cobie in terminal(the place where u can type command for cobie) :
 ```bash
 cobie
 ```
