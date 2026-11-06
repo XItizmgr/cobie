@@ -1,11 +1,13 @@
 # What is COBIE
 
-> COBIE is your local ai
-> COBIE is a local AI coding agent that works directly with your project through the terminal.
+> COBIE is your little helper that live on your computer.
+
+Think of COBIE as a helper that helps u while u work on your project.you can tell it what u want to do and it will help u with it like find,create,and change files.(only work for file/document)
+
 
 ![alt text](image-1.png)
-
-Cobie is powered by gemini api . which u can get it for free in _ https://aistudio.google.com/api-keys _
+U know every machine have an engine for them to work. COBIE's engine is google gemini api.U don't 
+Cobie is powered by gemini api . which u can get it for free in _ 
 
 ## Feature
 
