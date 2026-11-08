@@ -19,7 +19,9 @@ ur customer cannot order cookies without going to bakery but api aka bridge allo
 ### How to get api key from google.
  Grandma if u don't know how to get the api just follow the tutorial. love yayyy.
 
- <video controls src="How to get google api.mp4" title="Title" control muted></video>
+How to get a Google Gemini API key
+
+[![Watch Tutorial](./image.png)](https://github.com/XItizmgr/Egg/issues/39)
 
 ## Feature(What are the things cobie can do )
 
@@ -101,6 +103,10 @@ There are two ways to run COBIE
 - Download COBIE package from pip(store from where u will get cobie but its free) install using:
 
 - Create and activate virtual environment.(it is optional if grandma want she can otherwise it doesn't matter.)
+How to install and run COBIE using pip
+
+[![Watch Tutorial](./image.png)](https://github.com/XItizmgr/Egg/issues/37)
+
 ```bash
 python -m venv venv
 ```
@@ -120,6 +126,10 @@ cobie
 - Second run locally by installing cobie source code 
 
 # Installation
+
+ How to run COBIE by cloning the repository
+
+[![Watch Tutorial](./image.png)](https://github.com/XItizmgr/Egg/issues/38)
 
 ## Requirements
 
