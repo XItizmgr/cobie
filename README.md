@@ -130,10 +130,16 @@ cobie
 
 ```bash
     git clone https://github.com/XItizmgr/cobie
-    cd cobie
 ```
 
 ### 2. Create a virtual enrironment
+
+- first move to cobie's folder there are like nested folder rn TwT
+
+```bash
+cd cobie/cobie
+```
+- Then create a virtual and activate.
 
 ```bash
     python -m venv venv
@@ -155,6 +161,7 @@ u can get it from here(make sure to get the free gemini-3-flash-preview version 
 ### 5. Run COBIE
 
 ```bash
+    cd cobie
     python __main__.py
 ```
 # Reminder
