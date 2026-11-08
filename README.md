@@ -9,11 +9,17 @@ Think of COBIE as a helper that helps u while u work on your project.you can tel
 U know every machine have an engine for them to work just like that COBIE's engine is google gemini api.U don't need to understand every part of engine for to use machine but just in case.
 
 ## API 
+
 > What is an API ? 
 Think of api like a bridge that connect your bakery to your customer. 
 ur customer cannot order cookies without going to bakery but api aka bridge allow u to take ur order and give it to bakery using bridge 
  
  u can also connect ur bakery to ur customer using bridge from this website.*https://aistudio.google.com/api-keys *
+
+### How to get api key from google.
+ Grandma if u don't know how to get the api just follow the tutorial. love yayyy.
+
+ <video controls src="How to get google api.mp4" title="Title" control muted></video>
 
 ## Feature(What are the things cobie can do )
 
@@ -44,6 +50,7 @@ What do u think happen next ?
 COBIE will get ur instruction like a u telling a person or ur grandson what u want them to do.Then COBIE also asked his helper to do ur work(the helper is google gemini api) and then inside COBIE there is a manager who decide what to do with gemini (COBIE helper) and after deciding COBIE workers do simple specific task like create document read and edit after all the effort from these helper COBIE finally give u the result.
 
 In Simple -> you give work -> cobie understands it -> the manager decides what to do -> the workers do the job -> COBIE shows the result
+
 
 # Project FOlder(different parts of cobie and it's worker).
 
@@ -92,6 +99,15 @@ Feature
 # How to run Cobie.
 There are two ways to run COBIE
 - Download COBIE package from pip(store from where u will get cobie but its free) install using:
+
+- Create and activate virtual environment.(it is optional if grandma want she can otherwise it doesn't matter.)
+```bash
+python -m venv venv
+```
+```bash
+venv/scripts/activate
+```
+
 ```bash
 pip install cobie
 ```
@@ -102,7 +118,6 @@ cobie
 - After that just add google geminai free version code and run (the gemini model should be gemini-3-flash-preview)
 
 - Second run locally by installing cobie source code 
-
 
 # Installation
 
@@ -142,40 +157,6 @@ u can get it from here(make sure to get the free gemini-3-flash-preview version 
 ```bash
     python __main__.py
 ```
-
-# How to run COBIE.
-
-- Download COBIE (Folder for now ) from the website .
-- open the folder
-- and navigate to cobie main folder u have two folder inside the root folder frontend and cobie navigate to cobie 
-```bash
-    cd cobie
-```
-
-- Create a virtual enrironment
-
-```bash
-    python -m venv venv
-    venv\Scripts\activate
-```
-
-- Install dependencies
-
-```bash
-    pip install -r requirements.txt
-```
-
-- Get a gemini API key
-  COBIE use google gemini api as its llm model
-  u can get it from here
-  *https://aistudio.google.com/apikey*
-
-- Run COBIE
-
-```bash
-    python __main__.py
-```
-
 # Reminder
 
 The project is not fully complete as i want to make COBIE a vs code extension which can help many devloper and it will have many future plan..
