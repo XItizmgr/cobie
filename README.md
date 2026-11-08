@@ -123,47 +123,58 @@ cobie
 
 ## Requirements
 
-- python must be install
-- A google gemini api key
+- Python 3.10 or higher
+- A Google Gemini API key
 
-### 1. Clone the repository
+## Installation
+
+### Clone the repository
 
 ```bash
-    git clone https://github.com/XItizmgr/cobie
+git clone https://github.com/XItizmgr/cobie.git
 ```
 
-### 2. Create a virtual enrironment
+### Navigate to COBIE's project folder
 
-- first move to cobie's folder there are like nested folder rn TwT
+The repository currently has a nested folder structure, so navigate into the inner project directory:
 
 ```bash
 cd cobie/cobie
 ```
-- Then create a virtual and activate.
+
+### Create and activate a virtual environment
+
+```powershell
+python -m venv venv
+.\venv\Scripts\activate.
+```
+###  Install COBIE and its dependencies(the things that is used to create cobie)
 
 ```bash
-    python -m venv venv
-    venv\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install -e .
 ```
 
-### 3. Install dependencies
+###  Get your Google Gemini API key
+
+COBIE uses Google's Gemini api  to understand the conversation
+
+Get your API key from Google AI Studio:
+https://aistudio.google.com/apikey
+
+if u don't know how to follow this step
+
+ <video controls src="How to get google api.mp4" title="Title" control muted></video>
+
+###  Run COBIE
+
+From the project root, run:
 
 ```bash
-    pip install -r requirements.txt
+python -m cobie
 ```
 
-### 4. Get a gemini API key
-
-COBIE use google gemini api as its llm model
-u can get it from here(make sure to get the free gemini-3-flash-preview version api key)
-*https://aistudio.google.com/apikey*
-
-### 5. Run COBIE
-
-```bash
-    cd cobie
-    python __main__.py
-```
+That's it! COBIE should now start in your terminal.
 # Reminder
 
 The project is not fully complete as i want to make COBIE a vs code extension which can help many devloper and it will have many future plan..
