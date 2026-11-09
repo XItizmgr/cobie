@@ -21,7 +21,7 @@ ur customer cannot order cookies without going to bakery but api aka bridge allo
 
 How to get a Google Gemini API key
 
-[![Watch Tutorial](./image.png)](https://github.com/XItizmgr/Egg/issues/39)
+*https://youtu.be/ZGwvENERD7o*
 
 ## Feature(What are the things cobie can do )
 
@@ -103,9 +103,11 @@ There are two ways to run COBIE
 - Download COBIE package from pip(store from where u will get cobie but its free) install using:
 
 - Create and activate virtual environment.(it is optional if grandma want she can otherwise it doesn't matter.)
-How to install and run COBIE using pip
 
-[![Watch Tutorial](./image.png)](https://github.com/XItizmgr/Egg/issues/37)
+#  How to install and run COBIE using pip Tutorial
+
+*https://youtu.be/hTE_6gKQYVo*
+
 
 ```bash
 python -m venv venv
@@ -129,7 +131,7 @@ cobie
 
  How to run COBIE by cloning the repository
 
-[![Watch Tutorial](./image.png)](https://github.com/XItizmgr/Egg/issues/38)
+https://youtu.be/_LyVGq5zow0
 
 ## Requirements
 
