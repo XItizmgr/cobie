@@ -1,4 +1,4 @@
-    # What is COBIE
+# What is COBIE
  
 > COBIE is your little helper that live on your computer.
 
@@ -19,7 +19,7 @@ ur customer cannot order cookies without going to bakery but api aka bridge allo
 ### How to get api key from google.
  Grandma if u don't know how to get the api just follow the tutorial. love yayyy.
 
-How to get a Google Gemini API key
+# How to get a Google Gemini API key
 
 *https://youtu.be/ZGwvENERD7o*
 
@@ -90,7 +90,7 @@ Feature
 
 ![alt text](image-4.png)
 
-# For website Tech Stack
+# For website Tech Stack (things from which cobie website is build)
 
 - React
 - Typescript
@@ -156,7 +156,7 @@ cd cobie/cobie
 
 ### Create and activate a virtual environment
 
-```powershell
+```bash
 python -m venv venv
 .\venv\Scripts\activate.
 ```
@@ -174,9 +174,10 @@ COBIE uses Google's Gemini api  to understand the conversation
 Get your API key from Google AI Studio:
 https://aistudio.google.com/apikey
 
-if u don't know how to follow this step
+if u don't know how to follow this tutorial.
 
- <video controls src="How to get google api.mp4" title="Title" control muted></video>
+
+*https://youtu.be/ZGwvENERD7o*
 
 ###  Run COBIE
 
